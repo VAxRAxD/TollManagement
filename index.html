@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center">Toll Management Using Smart Contract </h1>
+    </div>
+    <h2 style="text-align: center">Register a Vehicle</h2>
+    <center>
+        <div class="container">
+            <form id="addForm">
+
+                <label for="no"><b>Vehicle Number</b></label>
+                <input type="text" id="no" name="no" placeholder="Enter the  Vehicle Number">
+
+                <label for="v_type"><b>Vehicle Type</b></label>
+                <input type="text" id="v_type" name="v_type" placeholder="Enter the type of Vehicle">
+
+                <input type="button" value="Register" onclick="regVehicles()">
+
+            </form>
+        </div>
+    </center>
+    <br>
+    <h2 style="text-align: center">Add Record</h2>
+    <center>
+        <div class="container">
+            <form id="recForm">
+
+                <label for="v_id"><b>Vehicle Id</b></label>
+                <input type="text" id="v_id" name="v_id" placeholder="Enter Vehicle ID">
+
+                <label for="v_det"><b>Date</b></label>
+                <input type="text" id="v_det" name="v_det" placeholder="Enter Date">
+
+                <label for="v_dir"><b>Direction of Travel</b></label>
+                <input type="text" id="v_dir" name="v_dir" placeholder="Enter Direction of Travel">
+
+                <input type="button" value="Add" onclick="recordVehicles()">
+
+            </form>
+        </div>
+        <br>
+        <h2 style="text-align: center">Get Details Of All Vehicles</h2>
+        <center>
+            <div class="container">
+                <form>
+                    <input type="button" value="Get Details" onclick="getAllVehicles()">
+                </form>
+            </div>
+        </center>
+        <br>
+
+        <h2 style="text-align: center">Vehicle Details</h2>
+        <center>
+            <div class="container">
+                <form id="prtvehForm">
+
+                    <label for="vp_id"><b>Vehicle Id</b></label>
+                    <input type="text" id="vp_id" name="vp_id" placeholder="Enter Vehicle ID">
+
+                    <input type="button" value="Get Details" onclick="getParticularVehicle()">
+
+                </form>
+            </div>
+        </center>
+        <br>
+        <h2 style="text-align: center">Vehicles Count</h2>
+        <center>
+            <div class="container">
+                <form>
+                    <input type="button" value="Get Count" onclick="countVehicles()">
+                </form>
+            </div>
+        </center>
+        <br>
+    <script src="node_modules/web3.js-browser/build/web3.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

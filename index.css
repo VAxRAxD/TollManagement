@@ -1,0 +1,53 @@
+body {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,1)), url('./images/toll.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, -1);
+}
+
+h1{
+    color: #FFB000;
+}
+
+h2{
+    color: #4ECCA3;
+}
+
+label{
+    color: #DBEDF3;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="button"] {
+  background-color: #1B2430;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="button"]:hover {
+  background-color: #F05454;
+}
+
+.container {
+  width: 45%;
+  border-radius: 10px;
+  background-color: #7D7C7C;
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
